@@ -1,0 +1,118 @@
+#main_single{
+  height: 100%;
+  background-color: whitesmoke;
+  overflow: scroll;
+  box-shadow: 0px 0px 5px black inset;
+  color: #444;
+  background-size: cover;
+  background-position: cneter;
+}
+#main_single .title{
+  font-size: 30px;
+}
+#main_single .title:after{
+  display: block;
+  content: "";
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+#main_single .wsmoke{
+  background-color: rgba(255,255,255,0.93);
+}
+#main_single .content{
+  margin-top: 20px;
+  border-bottom: 2px dotted #555;
+  margin-bottom: 20px;
+}
+
+#main_single a.back{
+  display: block;
+  margin-bottom: 20px;
+}
+
+#main_single hr{
+  border-color: #888;
+}
+
+#main_single h1{
+  font-size: 24px;
+  border-left: solid 8px rgb(203, 51, 121);
+  padding: 5px 0px;
+  padding-left: 12px;
+}
+#main_single h2{
+  font-size: 20px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #999;
+  -webkit-font-smoothing: antialiased;
+}
+#main_single h3{
+  border: dashed 2px #777;
+  padding: 8px;
+  font-size: 14px;
+  color: rgb(51, 151, 203);
+  letter-spacing: 0.3px;
+}
+#main_single p{
+  font-size: 14px;
+  text-indent: 0px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+#main_single a{
+  color: rgb(203, 51, 121);
+}
+#main_single blockquote{
+  border-color: #888;
+  border: double 3px #888;
+  color: #777;
+}
+#main_single li{
+  letter-spacing: 1.1px;
+}
+#main_single iframe{
+  max-width: 100%;
+}
+#main_single img{
+  max-width: 100%;
+}
+#main_single pre{
+  height: auto;
+  white-space: pre;
+  padding: 0;
+  background: #23241f;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 600px) {
+  #main_single .title{
+    font-size: 24px;
+  }
+  #main_single h1{
+    font-size: 24px;
+  }
+  #main_single h2{
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
+  #main_single h3{
+    font-size: 12px;
+  }
+  #main_single p{
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+  }
+  #main_single ul{
+    padding-left: 16px;
+  }
+  #main_single li{
+    letter-spacing: 0.2px;
+    font-size: 12px;
+  }
+
+  #main_single pre, code{
+    font-size: 10px;
+  }
+}

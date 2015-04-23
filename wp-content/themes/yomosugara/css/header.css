@@ -1,0 +1,65 @@
+/* header */
+header.navbar-default{
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  border: none;
+  z-index: 99;
+}
+header.navbar-default .navbar-brand, .navbar-default .navbar-nav li a{
+  color: whitesmoke;
+  margin: 2px 0;
+  -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+      transition: color .2s ease-in-out;
+}
+header.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav li a:hover, header.navbar-default .navbar-brand:focus, .navbar-default .navbar-nav li a:focus{
+  color: rgb(159, 43, 83) !important;
+}
+
+header.navbar-default .navbar-toggle .icon-bar{
+  background-color: #ddd;
+}
+
+header.navbar-default .navbar-toggle:focus, header.navbar-default .navbar-toggle:hover{
+  background-color: transparent;
+}
+.modal.contact_form .modal-header{
+  border-top: solid 4px rgb(179, 20, 86);
+  background-color: rgb(194, 194, 194);
+}
+.modal.contact_form .modal-title{
+  color: #666;
+}
+.modal.contact_form .modal-body{
+  background-color: #F2F1F1;
+}
+.modal.contact_form .modal-content{
+  border-radius: 0px;
+}
+.modal.contact_form .modal-content .wpcf7-submit{
+  background-color: rgb(37, 124, 131);
+  color: whitesmoke;
+}
+.modal.contact_form .modal-content input, .modal.contact_form .modal-content textarea{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.modal.contact_form .modal-content textarea{
+  height: 180px;
+}
