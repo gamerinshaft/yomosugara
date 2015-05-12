@@ -14,98 +14,111 @@ Template Name: home
 
     <meta charset="UTF-8">
 
+    <title>よもすがら</title>
 
-    <link href="<?php bloginfo('stylesheet_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="">
+    <meta name="author" content="Hakim El Hattab">
+
+     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/lib/mousewheel.js"></script>
+
 
   </head>
 
   <body>
-  <div class="table ">
-    <div class="table-cell">
-      <h1 class="site__title">夜もすがら</h1>
-      <h2 class="site__sub-title">Continue making it all night.</h2>
-    </div>
-  </div>
-  <ul class="site__menu">
-    <li class="menu__list">
-      Works
-    </li>
-    <li class="menu__list">
-      History
-    </li>
-    <li class="menu__list">
-      Gallery
-    </li>
-  </ul>
-  <div class="smog smog1"></div>
-  <div class="smog smog2"></div>
-<!--
-    <div class="page-scroller">
-      <div class="list-wrapper">
-        <ul class="list">
-          <li>
-            <h3>ほげ</h3>
-            <p>よもすがらは、幸田タニシ　宮崎いっきの二人で活動をおこなってますよ</p>
-            <p>よもすがらは、幸田タニシ　宮崎いっきの二人で活動をおこなってますよ</p>
-            <p>よもすがらは、幸田タニシ　宮崎いっきの二人で活動をおこなってますよ</p>
-            <p>よもすがらは、幸田タニシ　宮崎いっきの二人で活動をおこなってますよ</p>
+    <div id="contents">
+      <div class="smog smog1"></div>
+      <div class="smog smog2"></div>
+      <div class="section">
+        <div class="table">
+          <div class="table-cell">
+            <h1 class="site__title">夜もすがら</h1>
+            <h2 class="site__sub-title">Continue making it all night.</h2>
+          </div>
+        </div>
+        <ul class="site__menu">
+          <li class="menu__list">
+            Works
           </li>
-          <li>
-            <h3>Checkwave</h3>
-            <a target="_blank" href="http://lab.hakim.se/checkwave">lab.hakim.se/checkwave</a>
-            <p>Released 2014-06-26</p>
+          <li class="menu__list">
+            History
           </li>
-          <li>
-            <h3>Device Loop Animation</h3>
-            <a target="_blank" href="http://lab.hakim.se/device-loop">lab.hakim.se/device-loop</a>
-            <p>Released 2013-09-20</p>
+          <li class="menu__list">
+            Gallery
           </li>
-          <li>
-            <h3>Flexing Pagination Arrows</h3>
-            <a target="_blank" href="http://lab.hakim.se/flexing-pagination">lab.hakim.se/flexing-pagination</a>
-            <p>Released 2013-09-19</p>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="table">
+          <div class="table-cell">
+            <h1 class="site__title">夜もすがら</h1>
+            <h2 class="site__sub-title">Continue making it all night.</h2>
+          </div>
+        </div>
+        <ul class="site__menu">
+          <li class="menu__list">
+            Works
           </li>
-          <li>
-            <h3>CSS Animation: Hole</h3>
-            <a target="_blank" href="http://codepen.io/hakimel/full/fILbu">codepen.io/hakimel/full/fILbu</a>
-            <p>Released 2013-07-17</p>
+          <li class="menu__list">
+            History
           </li>
-          <li>
-            <h3>CSS Animation: Spinner</h3>
-            <a target="_blank" href="http://codepen.io/hakimel/full/CxliK">codepen.io/hakimel/full/CxliK</a>
-            <p>Released 2013-07-17</p>
+          <li class="menu__list">
+            Gallery
           </li>
-          <li>
-            <h3>CSS Animation: Cloud</h3>
-            <a target="_blank" href="http://codepen.io/hakimel/full/aIhkf">codepen.io/hakimel/full/aIhkf</a>
-            <p>Released 2013-07-17</p>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="table">
+          <div class="table-cell">
+            <h1 class="site__title">夜もすがら</h1>
+            <h2 class="site__sub-title">Continue making it all night.</h2>
+          </div>
+        </div>
+        <ul class="site__menu">
+          <li class="menu__list">
+            Works
           </li>
-          <li>
-            <h3>Ladda</h3>
-            <a target="_blank" href="http://lab.hakim.se/ladda">lab.hakim.se/ladda</a>
-            <p>Released 2013-05-28</p>
+          <li class="menu__list">
+            History
           </li>
-          <li>
-            <h3>Slides</h3>
-            <a target="_blank" href="http://slides.com">slides.com</a>
-            <p>Released 2013-05-12</p>
+          <li class="menu__list">
+            Gallery
           </li>
-          <li>
-            <h3>Kontext</h3>
-            <a target="_blank" href="http://lab.hakim.se/kontext">lab.hakim.se/kontext</a>
-            <p>Released 2013-02-26</p>
-          </li>
-
         </ul>
       </div>
     </div>
-
-    <div class="page-wrapper">
-    </div>
-
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/iscroll-probe.js"></script>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/script.js"></script>
- -->
+    <script type="text/javascript">
+      $(function() {
+          $(window).on("resize load", function(){
+            //コンテンツの横サイズ
+            console.log("hoge");
+            var cont = $('#contents');
+            var child = $('.section')
+            var childW = child.outerWidth(true);
+            child.width($(window).outerWidth(true));
+            var contW = childW * $('.section',cont ).length;
+            cont.css('width', contW);
+            $(".smog").css('width', contW);
+          });
+          //スクロールスピード
+            var speed = 2;
+            //マウスホイールで横移動
+            $('html').mousewheel(function(event, mov) {
+                //ie firefox
+                $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+                //webkit
+                $('body').scrollLeft($('body').scrollLeft() - mov * speed);
+                return false;   //縦スクロール不可
+            });
+         $('a[href^=#]').click(function() {
+        var speed = 400;// ミリ秒
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().left; //targetの位置を取得
+        $('html, body').animate({scrollLeft:position}, speed, 'swing');
+        return false;
+         });
+      });
+    </script>
 
   </body>
 
