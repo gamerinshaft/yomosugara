@@ -100,7 +100,7 @@ div[item="image"]{
   position: absolute;
 }
 
-@media (max-width: 467px) {
+@media (max-width: 736px) {
   .site__title{
     font-size: 40px;
   }
