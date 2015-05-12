@@ -50,9 +50,8 @@ ul.site__menu {
   height: 50%;
   bottom: 0px;
   background-size: contain;
-  background-position-y: bottom;
-  background-repeat-y: no-repeat;
-  background-repeat-x: repeat;
+  background-position: left bottom;
+  background-repeat: repeat no-repeat;
   -webkit-animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
