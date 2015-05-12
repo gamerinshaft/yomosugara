@@ -14,13 +14,6 @@ Template Name: home
 
     <meta charset="UTF-8">
 
-    <title>Monocle</title>
-
-    <meta name="description" content="">
-    <meta name="author" content="Hakim El Hattab">
-
-    <meta name="viewport" content="width=1000, user-scalable=no" />
-
 
     <link href="<?php bloginfo('stylesheet_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
 
