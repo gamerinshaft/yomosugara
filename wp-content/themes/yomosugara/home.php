@@ -67,7 +67,7 @@ Template Name: home
         $.fn.horizon.defaults = {
                     scrollTimeout: null,
                     scrollEndDelay: 50,
-                    scrollDuration: 1000,
+                    scrollDuration: 500,
                     i: 0,
                     limit: 0,
                     docWidth: 0,
