@@ -36,8 +36,8 @@ body {
   -webkit-animation-iteration-count: 1;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
-  animation-duration: 80s;
-  -webkit-animation-duration: 80s;
+  animation-duration: 30s;
+  -webkit-animation-duration: 30s;
   animation-name: nightMove;
   -webkit-animation-name: nightMove;
   background-image: url("../img/yakei.png");
@@ -48,11 +48,6 @@ html, body{
   color: white;
 }
 
-#contents{
-  height: 100%;
-  z-index: 10;
-  overflow: hidden;
-}
 .section{
   overflow: auto;
   position: relative;
@@ -114,32 +109,82 @@ ul.site__menu {
   font-size: 16px;
   bottom: 0px;
   font-size: 40px;
+  z-index: 5;
+  cursor: pointer;
 }
+ul.site__menu li{
+  position: relative;
+}
+ul.site__menu li:after{
+  content: attr(data-word);
+  color: rgb(200, 0, 198);
+  position: absolute;
+  display: block;
+  width: 0%;
+  top: 0px;
+  font-weight: bold;
+  overflow: hidden;
+}
+ul.site__menu li:hover:after{
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: wordMove;
+  -webkit-animation-name: wordMove;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+}
+@keyframes wordMove {
+  0% {
+    width: 0%;
+  }
+  50%{
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes wordMove {
+  0% {
+    width: 0%;
+  }
+  50%{
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .smog{
   position: fixed;
   width: 100%;
   height: 100%;
   bottom: 0px;
+  z-index: 0;
   background-position: left bottom;
   background-repeat: repeat no-repeat;
+  animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
+  animation-name: smogMove;
+  -webkit-animation-name: smogMove;
 }
 .smog.smog1{
   background-image: url("../img/bg_smog02.png");
   animation-duration: 300s;
   -webkit-animation-duration: 300s;
-  animation-name: smogMove;
-  -webkit-animation-name: smogMove;
 }
 
 .smog.smog2{
   background-image: url("../img/bg_smog03.png");
   animation-duration: 290s;
   -webkit-animation-duration: 290s;
-  animation-name: smogMove;
-  -webkit-animation-name: smogMove;
 }
 
 @keyframes smogMove {
@@ -164,11 +209,13 @@ ul.site__menu {
   }
 }
 
-div[item="image"]{
+/*======================*/
+#project.project{
+  border: solid 1px rgba(255,255,255, 0.3);
   width: 100%;
   height: 100%;
-  position: absolute;
 }
+/*======================*/
 
 @media (max-width: 736px) {
   .site__title{

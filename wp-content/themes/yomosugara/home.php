@@ -28,13 +28,13 @@ Template Name: home
     <div class="smog smog1"></div>
     <div class="smog smog2"></div>
     <ul class="site__menu">
-      <li class="menu__list">
+      <li data-word="Works" class="menu__list">
         Works
       </li>
-      <li class="menu__list">
+      <li data-word="History" class="menu__list">
         History
       </li>
-      <li class="menu__list">
+      <li data-word="Gallery" class="menu__list">
         Gallery
       </li>
     </ul>
@@ -47,10 +47,33 @@ Template Name: home
       </div>
     </section>
     <section data-role="section" class="section">
-      <div class="table">
+      <div class="table container">
         <div class="table-cell">
-          <h1 class="site__title">春はあけぼの</h1>
-          <h2 class="site__sub-title">Continue making it all night.</h2>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-9">
+            <div id="project" class="project">
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="well"></div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="well"></div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="well"></div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="well"></div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="well"></div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="well"></div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
