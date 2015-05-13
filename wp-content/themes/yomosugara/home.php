@@ -41,8 +41,8 @@ Template Name: home
     <section data-role="section" class="section">
       <div class="table">
         <div class="table-cell">
-          <h1 class="site__title">夜もすがら</h1>
-          <h2 class="site__sub-title">Continue making it all night.</h2>
+          <h1 class="site__title">よもすがら</h1>
+          <h2 class="site__sub-title">Continue making it all night</h2>
         </div>
       </div>
     </section>
