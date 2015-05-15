@@ -46,34 +46,32 @@ Template Name: home
         </div>
       </div>
     </section>
-    <section data-role="section" class="section">
-      <div class="table container">
-        <div class="table-cell">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-9">
-            <div id="project" class="project">
-              <div class="row">
-                <div class="col-xs-4">
-                  <div class="well"></div>
-                </div>
-                <div class="col-xs-4">
-                  <div class="well"></div>
-                </div>
-                <div class="col-xs-4">
-                  <div class="well"></div>
-                </div>
-                <div class="col-xs-4">
-                  <div class="well"></div>
-                </div>
-                <div class="col-xs-4">
-                  <div class="well"></div>
-                </div>
-                <div class="col-xs-4">
-                  <div class="well"></div>
+    <section data-role="section" class="section ss-icon" id="sns">
+      <div class="table">
+        <dov class="table-cell">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="sns__title">
+                  <h1>SNS Acounts</h1>
                 </div>
               </div>
+              <div class="col-sm-8 icons">
+                <a href="#" class="icon"><article><span>facebook</span></article></a>
+                <a href="#" class="icon"><article><span>twitter</span></article></a>
+                <a href="#" class="icon"><article><span>tumblr</span></article></a>
+                <a href="#" class="icon"><article><span>pinterest</span></article></a>
+                <a href="#" class="icon"><article><span>behance</span></article></a>
+                <a href="#" class="icon"><article><span>github</span></article></a>
+                <a href="#" class="icon"><article><span>linkedin</span></article></a>
+                <a href="#" class="icon"><article><span>dribbble</span></article></a>
+                <a href="#" class="icon"><article><span>instagram</span></article></a>
+                <a href="#" class="icon"><article><span>flickr</span></article></a>
+                <a href="#" class="icon"><article><span>blogger</span></article></a>
+                <a href="#" class="icon"><article><span>vimeo</span></article></a>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </section>

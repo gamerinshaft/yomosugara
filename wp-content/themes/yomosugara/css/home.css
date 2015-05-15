@@ -36,8 +36,8 @@ body {
   -webkit-animation-iteration-count: 1;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
-  animation-duration: 30s;
-  -webkit-animation-duration: 30s;
+  animation-duration: 240s;
+  -webkit-animation-duration: 240s;
   animation-name: nightMove;
   -webkit-animation-name: nightMove;
   background: #00000a; /* Old browsers */
@@ -65,23 +65,27 @@ html, body{
 
 @keyframes nightMove {
   0% {
-    background-position-y: top;
+    background-size: 100%;
+    background-position: 0%;
   }
   50%{
   }
   100% {
-    background-position-y: bottom;
+    background-position: -700%;
+    background-size: 800%;
   }
 }
 
 @-webkit-keyframes nightMove {
   0% {
-    background-position-y: top;
+    background-size: 100%;
+    background-position: 0%;
   }
   50%{
   }
   100% {
-    background-position-y: bottom;
+    background-position: -700%;
+    background-size: 800%;
   }
 }
 
@@ -217,14 +221,125 @@ ul.site__menu li:hover:after{
 }
 
 /*======================*/
-#project.project{
-  border: solid 1px rgba(255,255,255, 0.3);
+
+ /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+
+#sns h1{
+  font-family: "yomosugara";
+}
+
+#sns .icons{
+  text-align: center;
+}
+#sns a.icon{
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 5px; }
+#sns article {
+  padding: 32px;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
   width: 100%;
   height: 100%;
-}
-/*======================*/
+  background-color: #333;
+  box-shadow: 0 0 6px -2px #000, 0 0 45px -20px #000;
+  color: #fff;
+  line-height: 90px;
+  transform: perspective(300px) rotateY(0deg);
+  transition: transform 0.4s linear, background-color 0s linear 0.2s, color 0s linear 0.2s; }
+#sns a:hover article {
+  transform: perspective(300px) rotateY(180deg);
+  color: #eee;
+  transition: transform 0.2s linear, background-color 0s linear 0.1s, color 0s linear 0.1s; }
+#sns a:nth-child(1):hover article {
+  background-color: #3B5998; }
+#sns a:nth-child(2):hover article {
+  background-color: #00ACED; }
+#sns a:nth-child(3):hover article {
+  background-color: #2C4762; }
+#sns a:nth-child(4):hover article {
+  background-color: #CB2027; }
+#sns a:nth-child(5):hover article {
+  background-color: #1769FF; }
+#sns a:nth-child(6):hover article {
+  background-color: #4183C4; }
+#sns a:nth-child(7):hover article {
+  background-color: #3399CC; }
+#sns a:nth-child(8):hover article {
+  background-color: #EA4C89; }
+#sns a:nth-child(9):hover article {
+  background-color: #3F729B; }
+#sns a:nth-child(10):hover article {
+  background-color: #FF0084; }
+#sns a:nth-child(11):hover article {
+  background-color: #F26300; }
+#sns a:nth-child(12):hover article {
+  background-color: #445566; }
+#sns span {
+  transition: transform 0s linear 0.2s, text-shadow 0s linear 0.2s;
+  display: block;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: antialiased; }
+#sns a:hover span {
+  transition: transform 0s linear 0.1s, text-shadow 0s linear 0.1s;
+  transform: scale(-1, 1);
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.5); }
 
-@media (max-width: 736px) {
+@font-face {
+  font-family: "SSSocial";
+  src: url('../font/ss-social-regular.eot');
+  src: url('../font/ss-social-regular.eot?#iefix') format('embedded-opentype'),
+       url('../font/ss-social-regular.woff') format('woff'),
+       url('../font/ss-social-regular.ttf') format('truetype'),
+       url('../font/ss-social-regular.svg#SSSocialRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html:hover [class^="ss-"] {
+  -ms-zoom: 1; }
+#sns.ss-icon, #sns.ss-icon.ss-social, #sns.ss-icon.ss-social-circle,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"][class*=" ss-social"]:before, [class*=" ss-"][class*=" ss-social"]:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after {
+  font-family: "SSSocial";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased; }
+#sns.ss-icon.ss-social-circle,
+[class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before,
+[class^="ss-"].ss-social-circle.right:after, [class*=" ss-"].ss-social-circle.right:after {
+  font-weight: bold; }
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before {
+  display: none;
+  content: ''; }
+
+
+/*======================*/
+@media (max-width: 980px) {
+  #sns a.icon{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  #sns article {
+    padding: 16px;
+  }
+}
+@media (max-width: 767px) {
   .site__title{
     font-size: 40px;
   }
@@ -233,5 +348,26 @@ ul.site__menu li:hover:after{
   }
   ul.site__menu {
     font-size: 32px;
+  }
+  #sns a.icon{
+    width: 80px;
+    height: 80px;
+   }
+  #sns article{
+    padding: 0px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 680px) {
+  #sns a.icon{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  }
+  #sns article{
+    padding: 0px;
+    line-height: 70px;
+    font-size: 24px;
   }
 }
