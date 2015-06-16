@@ -1,0 +1,33 @@
+.background
+  height 800%
+  width 100%
+  z-index 0
+  // Background gradation
+  position fixed
+  top -700%
+  background-repeat no-repeat
+  background-attachment fixed
+  background linear-gradient(to bottom, #00000a 0%, #2464dc 75%, #e6c8dc 90%, #ffdcb5 100%) // W3C
+  // vendor prefix of gradation
+  background #00000a // Old browsers
+  background -moz-linear-gradient(top, #00000a 0%, #2464dc 75%, #e6c8dc 90%, #ffdcb5 100%) // FF3.6+
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00000a), color-stop(75%, #2464dc), color-stop(90%, #e6c8dc), color-stop(100%, #ffdcb5)) // Chrome,Safari4+
+  background -webkit-linear-gradient(top, #00000a 0%, #2464dc 75%, #e6c8dc 90%, #ffdcb5 100%) // Chrome10+,Safari5.1+
+  background -o-linear-gradient(top, #00000a 0%, #2464dc 75%, #e6c8dc 90%, #ffdcb5 100%) // Opera 11.10+
+  background -ms-linear-gradient(top, #00000a 0%, #2464dc 75%, #e6c8dc 90%, #ffdcb5 100%) // IE10+
+
+  // Background animation
+  animation background 240s linear infinite
+  // vendor prefix of animation
+  -o-animation background 240s linear infinite
+  -ms-animation background 240s linear infinite
+  -moz-animation background 240s linear infinite
+  -webkit-animation background 240s linear infinite
+
+@keyframes background
+  0%
+    top 0%
+  50%
+    top -700%
+  100%
+    top 0%

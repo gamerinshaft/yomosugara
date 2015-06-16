@@ -1,0 +1,16 @@
+.gallery__box {
+  width: 1030px;
+  padding-top: 8%;
+  margin: 0 auto;
+}
+.gallery__box .large {
+  width: 40%;
+}
+.gallery__box .small {
+  width: 20%;
+}
+.gallery__box img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

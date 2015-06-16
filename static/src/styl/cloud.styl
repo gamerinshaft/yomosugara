@@ -1,0 +1,38 @@
+.cloud
+  bottom: -3%
+  position fixed
+  z-index 0
+
+.cloud.cloud--type01
+  // cloud animation
+  animation cloud--type01 300s linear infinite
+  // vendor prefix of animation
+  -o-animation cloud--type01 300s linear infinite
+  -ms-animation cloud--type01 300s linear infinite
+  -moz-animation cloud--type01 300s linear infinite
+  -webkit-animation cloud--type01 300s linear infinite
+
+@keyframes cloud--type01
+  0%
+    left 100%
+  50%
+    left -110%
+  100%
+    left 100%
+
+.cloud.cloud--type02
+  // cloud animation
+  animation cloud--type02 240s linear infinite
+  // vendor prefix of animation
+  -o-animation cloud--type02 240s linear infinite
+  -ms-animation cloud--type02 240s linear infinite
+  -moz-animation cloud--type02 240s linear infinite
+  -webkit-animation cloud--type02 240s linear infinite
+
+@keyframes cloud--type02
+  0%
+    left -120%
+  50%
+    left 120%
+  100%
+    left -120%

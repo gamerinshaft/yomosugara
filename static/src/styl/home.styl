@@ -1,0 +1,138 @@
+// home__title
+@font-face
+  font-family 'M+ 2p thin'
+  src url('../fonts/mplus-2p-thin-sub.eot')
+  src url('../fonts/mplus-2p-thin-sub.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/mplus-2p-thin-sub.woff') format('woff'),
+  url('../fonts/mplus-2p-thin-sub.ttf') format('truetype');
+
+// home__subtitle
+@font-face
+  font-family 'M+ 2p light'
+  src url('../fonts/mplus-2p-light-sub.eot')
+  src url('../fonts/mplus-2p-light-sub.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/mplus-2p-light-sub.woff') format('woff'),
+  url('../fonts/mplus-2p-light-sub.ttf') format('truetype');
+
+#home
+  -webkit-font-smoothing antialiased
+  font-smoothing antialiased
+
+.home__title
+  font-family 'M+ 2p thin'
+  font-size 72px
+  padding-top 20%
+  text-align center
+
+.home__subtitle
+  font-family 'M+ 2p light'
+  font-size 24px
+  text-align center
+
+.home__menu
+  width 720px
+  margin 0 auto
+  padding-top 7%
+
+  a
+    display block
+    float left
+
+  img
+    margin 0 30px
+    width 120px
+    height 120px
+
+  a:nth-child(1)
+    animation vertical 2s ease-in-out infinite alternate
+    -o-animation vertical 2s ease-in-out infinite alternate
+    -ms-animation vertical 2s ease-in-out infinite alternate
+    -moz-animation vertical 2s ease-in-out infinite alternate
+    -webkit-animation vertical 2s ease-in-out infinite alternate
+  a:nth-child(2)
+    animation vertical 2s ease-in-out .5s infinite alternate
+    -o-animation vertical 2s ease-in-out .5s infinite alternate
+    -ms-animation vertical 2s ease-in-out .5s infinite alternate
+    -moz-animation vertical 2s ease-in-out .5s infinite alternate
+    -webkit-animation vertical 2s ease-in-out .5s infinite alternate
+  a:nth-child(3)
+    animation vertical 2s ease-in-out 1s infinite alternate
+    -o-animation vertical 2s ease-in-out 1s infinite alternate
+    -ms-animation vertical 2s ease-in-out 1s infinite alternate
+    -moz-animation vertical 2s ease-in-out 1s infinite alternate
+    -webkit-animation vertical 2s ease-in-out 1s infinite alternate
+  a:nth-child(4)
+    animation vertical 2s ease-in-out 1.5s infinite alternate
+    -o-animation vertical 2s ease-in-out 1.5s infinite alternate
+    -ms-animation vertical 2s ease-in-out 1.5s infinite alternate
+    -moz-animation vertical 2s ease-in-out 1.5s infinite alternate
+    -webkit-animation vertical 2s ease-in-out 1.5s infinite alternate
+
+  img:hover
+    animation spin .5s 0s
+    -o-animation spin .5s 0s
+    -ms-animation spin .5s 0s
+    -moz-animation spin .5s 0s
+    -webkit-animation spin .5s 0s
+
+vendors = official
+
+@keyframes vertical
+  0%
+    transform translateY(0px)
+  100%
+    transform translateY(10px)
+
+@-o-keyframes vertical
+  0%
+    -o-transform translateY(0px)
+  100%
+    -o-transform translateY(10px)
+
+@-ms-keyframes vertical
+  0%
+    -ms-transform translateY(0px)
+  100%
+    -ms-transform translateY(10px)
+
+@-moz-keyframes vertical
+  0%
+    -moz-transform translateY(0px)
+  100%
+    -moz-transform translateY(10px)
+
+@-webkit-keyframes vertical
+  0%
+    -webkit-transform translateY(0px)
+  100%
+    -webkit-transform translateY(10px)
+
+@keyframes spin
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(-360deg)
+
+@-o-keyframes spin
+  0%
+    -o-transform rotate(0deg)
+  100%
+    -o-transform rotate(-360deg)
+
+@-ms-keyframes spin
+  0%
+    -ms-transform rotate(0deg)
+  100%
+    -ms-transform rotate(-360deg)
+
+@-moz-keyframes spin
+  0%
+    -moz-transform rotate(0deg)
+  100%
+    -moz-transform rotate(-360deg)
+
+@-webkit-keyframes spin
+  0%
+    -webkit-transform rotate(0deg)
+  100%
+    -webkit-transform rotate(-360deg)

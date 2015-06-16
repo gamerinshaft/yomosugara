@@ -1,0 +1,251 @@
+doctype html
+html
+  head
+    title よもすがら
+    meta(content="text/html; charset=utf-8", http-equiv="Content-Type")
+    meta(content="ja", http-equiv="Content-Language")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes")
+    meta(name="description", content="よもすがら")
+    meta(name="keywords", content="よもすがら, ノベルゲーム, 同人サークル")
+    link(rel="stylesheet", type="text/css", href="css/base.css")
+    script(type="text/javascript" src="js/jquery.min.js")
+    script(type="text/javascript" src="js/underscore-min.js")
+    script(type="text/javascript" src="js/freewall.js")
+    link(rel="stylesheet", type="text/css", href="css/index.css")
+    link(rel="stylesheet", type="text/css", href="css/background.css")
+    link(rel="stylesheet", type="text/css", href="css/cloud.css")
+    link(rel="stylesheet", type="text/css", href="css/home.css")
+    link(rel="stylesheet", type="text/css", href="css/work.css")
+    link(rel="stylesheet", type="text/css", href="css/history.css")
+    link(rel="stylesheet", type="text/css", href="css/gallery.css")
+    link(rel="stylesheet", type="text/css", href="css/about.css")
+    script(type="text/javascript" src="js/index.js")
+  body
+    .background
+    .cloud.cloud--type01
+      img(src="img/cloud--type01.png")
+    .cloud.cloud--type02
+      img(src="img/cloud--type02.png")
+    .container
+      section#home
+        .home__title よもすがら
+        .home__subtitle We continue making wonderful things all night long...
+        nav.home__menu
+          a(href="#work", data-js="scroll", data-scroll="#work")
+            img(src="img/menu__work.png")
+          a(href="#history", data-js="scroll", data-scroll="#history")
+            img(src="img/menu__history.png")
+          a(href="#gallery", data-js="scroll", data-scroll="#gallery")
+            img(src="img/menu__gallery.png")
+          a(href="#about", data-js="scroll", data-scroll="#about")
+            img(src="img/menu__about.png")
+      section#work
+        nav.menu
+          a(href="#work")
+            img(src="img/menu__work--active.png")
+          a(href="#history", data-js="scroll", data-scroll="#history")
+            img(src="img/menu__history.png")
+          a(href="#gallery", data-js="scroll", data-scroll="#gallery")
+            img(src="img/menu__gallery.png")
+          a(href="#about", data-js="scroll", data-scroll="#about")
+            img(src="img/menu__about.png")
+        .work__box
+          article
+            img.work__image(src="img/work__image01.png")
+            p.work__description
+              | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+              br
+              | またそのなかでいっしょになっ
+            .work__spcial_site_link
+              a(href="special.html")
+                img(src="img/work__special_site_link.png")
+          article
+            img.work__image(src="img/work__image02.png")
+            p.work__description
+              | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+              br
+              | またそのなかでいっしょになっ
+            .work__spcial_site_link
+              a(href="special.html")
+                img(src="img/work__special_site_link.png")
+          article
+            img.work__image(src="img/work__image03.png")
+            p.work__description
+              | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+              br
+              | またそのなかでいっしょになっ
+            .work__spcial_site_link
+              a(href="special.html")
+                img(src="img/work__special_site_link.png")
+          article
+            img.work__image(src="img/work__image04.png")
+            p.work__description
+              | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+              br
+              | またそのなかでいっしょになっ
+            .work__spcial_site_link
+              a(href="special.html")
+                img(src="img/work__special_site_link.png")
+      section#history
+        nav.menu
+          a(href="#work", data-js="scroll", data-scroll="#work")
+            img(src="img/menu__work.png")
+          a(href="#history")
+            img(src="img/menu__history--active.png")
+          a(href="#gallery", data-js="scroll", data-scroll="#gallery")
+            img(src="img/menu__gallery.png")
+          a(href="#about", data-js="scroll", data-scroll="#about")
+            img(src="img/menu__about.png")
+        .history__box
+          .category.making
+            .category__title
+              img(src="img/category__making.png")
+              span 制作
+            .category__box
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+              article
+                a(href="article.html") おった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾ら
+              article
+                a(href="article.html") れたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになっ
+              article
+                a(href="article.html") あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、
+              article.active
+                a(href="article.html") うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+              article
+                a(href="article.html") あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、
+              article
+                a(href="article.html") うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+            .category__pager
+              span.deactive &lt;
+              span.active 1
+              span 2
+              span 3
+              span &gt;
+          .category.event
+            .category__title
+              img(src="img/category__event.png")
+              span イベント
+            .category__box
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+              article
+                a(href="article.html") おった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾ら
+              article
+                a(href="article.html") れたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになっ
+              article
+                a(href="article.html") あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、
+              article.active
+                a(href="article.html") うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+              article
+                a(href="article.html") あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、
+              article
+                a(href="article.html") うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+            .category__pager
+              span &lt;
+              span 2
+              span 3
+              span.active 4
+              span 5
+              span 6
+              span &gt;
+          .category.misc
+            .category__title
+              img(src="img/category__misc.png")
+              span その他
+            .category__box
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+              article
+                a(href="article.html") おった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾ら
+              article
+                a(href="article.html") れたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになっ
+              article
+                a(href="article.html") あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、
+              article.active
+                a(href="article.html") うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+              article
+                a(href="article.html") あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、
+              article
+                a(href="article.html") うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の
+              article
+                a(href="article.html") あのイーハトーヴォのすきと
+            .category__pager
+              span &lt;
+              span 2
+              span 3
+              span.active 4
+              span.deactive &gt;
+      section#gallery
+        nav.menu
+          a(href="#work", data-js="scroll", data-scroll="#work")
+            img(src="img/menu__work.png")
+          a(href="#history", data-js="scroll", data-scroll="#history")
+            img(src="img/menu__history.png")
+          a(href="#gallery")
+            img(src="img/menu__gallery--active.png")
+          a(href="#about", data-js="scroll", data-scroll="#about")
+            img(src="img/menu__about.png")
+        .gallery__box
+          div(data-js="tile")
+            .large.cell
+              img(src="img/gallery__recent.png")
+            .small.cell
+              img(src="img/gallery__image01.png")
+            .small.cell
+              img(src="img/gallery__image02.png")
+            .small.cell
+              img(src="img/gallery__image02.png")
+            .small.cell
+              img(src="img/gallery__image03.png")
+            .small.cell
+              img(src="img/gallery__image03.png")
+            .small.cell
+              img(src="img/gallery__image01.png")
+      section#about
+        nav.menu
+          a(href="#work", data-js="scroll", data-scroll="#work")
+            img(src="img/menu__work.png")
+          a(href="#history", data-js="scroll", data-scroll="#history")
+            img(src="img/menu__history.png")
+          a(href="#gallery", data-js="scroll", data-scroll="#gallery")
+            img(src="img/menu__gallery.png")
+          a(href="#about")
+            img(src="img/menu__about--active.png")
+        .about__box
+          .about__title
+            span.title よもすがら
+            span とは
+          .about__description
+            p
+              | ノベルゲームを作るサークルです。香田たにし、宮﨑一揆の二人で活動しています。
+              br
+              | 実時間と関連していたりスマートフォンのGPSを活用したりと、
+              br
+              | 現実とインタラクティブな一風変わった同人ゲームが作れたらと思っています。
+          .about__members
+            ul.members
+              li.members__member.active 宮﨑一揆
+              li.members__member 香田たにし
+            .profile
+              .profile__icon
+                img(src="img/profile__icon.png")
+              .profile__comment
+                | 殊にそのころ、モリーオ市では競馬場を植物園に拵え直すというので、その景色のいいまわりにアカシヤを植え込んだ広い地面が、
+                br
+                | わたくしどもの役所の方へまわって来たものですから、わたくしはすぐ宿直という名前で月賦で買った小さな蓄音器と二十枚ばかりのレコードをもって、その番小屋にひとり住むことになりました。
+                br
+                br
+                | Twitter: @miyaikki
+              .clear
+            .clear

@@ -1,0 +1,101 @@
+.history__box
+  width 1030px
+  height 550px
+  border-box box-sizing
+  margin 0 auto
+  margin-top 3%
+  background-color rgba(255, 255, 255, 0.8)
+  color #333
+  padding 20px
+
+.category
+  width 33.33%
+  float left
+
+  article
+    margin 10px 5px
+  a
+    display block
+    color #333
+    box-sizing border-box
+    border-left-width 2px
+    border-left-style solid
+    padding-left 12px
+
+    &:hover
+      padding-left 8px
+      border-left-width 6px
+
+.category__title
+  position relative
+  margin 0 10px
+  padding 6px 0px
+  color #eee
+  border solid 1px #888
+  text-align center
+  box-shadow 0px 0px 6px 6px rgba(70, 70, 70, 0.3) inset
+
+  img
+    position absolute
+    top 7px
+    width 20px
+
+  span
+    margin-left 24px
+
+.category__pager
+  text-align center
+
+  span
+    cursor pointer
+    margin 0px 4px
+
+  span.active
+    cursor default
+    text-decoration underline
+
+  span.deactive
+    cursor default
+    color #aaa
+
+.category.making
+  .category__title
+    background-color #eb3d00
+
+  a
+    border-left-color #eb3d00
+
+    &:hover
+      color #eb3d00
+
+  .category__pager
+    span.active
+      color #eb3d00
+
+.category.event
+  .category__title
+    background-color #016fde
+
+  a
+    border-left-color #016fde
+
+    &:hover
+      color #016fde
+
+  .category__pager
+    span.active
+      color #016fde
+
+.category.misc
+  .category__title
+    background-color #78a942
+
+  a
+    border-left-color #78a942
+
+    &:hover
+      color #78a942
+
+  .category__pager
+    span.active
+      color #78a942

@@ -1,24 +1,24 @@
 <?php
 $post = $wp_query->post;
 if ( in_category('arduino') ) {
-include(TEMPLATEPATH.'/arduino_single.php');
+include(TEMPLATEPATH.'/single/arduino_single.php');
 } elseif ( in_category('blog') ) {
-include(TEMPLATEPATH.'/blog_single.php');
+include(TEMPLATEPATH.'/single/blog_single.php');
 } elseif ( in_category('challenge') ) {
-include(TEMPLATEPATH.'/challenge_single.php');
+include(TEMPLATEPATH.'/single/challenge_single.php');
 } elseif ( in_category('illust') ) {
-include(TEMPLATEPATH.'/illust_single.php');
+include(TEMPLATEPATH.'/single/illust_single.php');
 } elseif ( in_category('music') ) {
-include(TEMPLATEPATH.'/music_single.php');
+include(TEMPLATEPATH.'/single/music_single.php');
 } elseif ( in_category('novel') ) {
-include(TEMPLATEPATH.'/novel_single.php');
+include(TEMPLATEPATH.'/single/novel_single.php');
 } elseif ( in_category('photo') ) {
-include(TEMPLATEPATH.'/photo_single.php');
+include(TEMPLATEPATH.'/single/photo_single.php');
 } elseif ( in_category('programming') ) {
-include(TEMPLATEPATH.'/programming_single.php');
+include(TEMPLATEPATH.'/single/programming_single.php');
 } elseif ( in_category('cooking') ) {
-include(TEMPLATEPATH.'/cooking_single.php');
+include(TEMPLATEPATH.'/single/cooking_single.php');
 } else {
-include(TEMPLATEPATH.'/uncategorized_single.php');
+include(TEMPLATEPATH.'/single/uncategorized_single.php');
 }
 ?>
